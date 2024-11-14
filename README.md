@@ -1,6 +1,15 @@
 # Shellmodoro - A Pomodoro Timer Script
 
-Shellmodoro is a simple Pomodoro timer script written in `sh` (Bash-compatible). It allows you to focus on tasks by setting a timer for work intervals (Pomodoros) and automatically reminds you when it's time to take a break. It works on both macOS and Linux, using native notification utilities for notifications and the terminal bell when no notification utility is available.
+Shellmodoro is a simple Pomodoro timer script written in `sh` (Bash-compatible).
+
+It allows you to focus on tasks by setting a timer for work intervals (Pomodoros) and automatically reminds you when it's time to take a break.
+
+It works on both macOS and Linux
+
+It using native notification utilities for notifications and the terminal bell when no notification utility is available.
+
+![Help screenshot](./screenshots/help.png "Help")
+![Usage screenshot](./screenshots/usage.png "Usage")
 
 ## Features
 
@@ -9,19 +18,40 @@ Shellmodoro is a simple Pomodoro timer script written in `sh` (Bash-compatible).
 - Supports notifications via `dunst`, `notify-send`, or `osascript`.
 - Rings the terminal bell when no notification utility is found.
 - View and manage your Pomodoro log.
+To complete the installation instructions for `Shellmodoro`, here’s how you can set it up fully after making it executable:
+
+---
 
 ## Installation
 
-1. Clone the repository or download the script to your local machine.
+### Manual
+
+1. **Download the script to your local machine**:
 
    ```bash
-   git clone https://github.com/your-username/shellmodoro.git
+   wget https://raw.githubusercontent.com/5mdt/shellmodoro/refs/heads/main/shellmodoro.sh
    ```
 
-2. Make the script executable:
+2. **Make the script executable**:
 
    ```bash
    chmod +x shellmodoro.sh
+   ```
+
+3. **Move the script to a directory in your PATH** (optional but recommended):
+
+   ```bash
+   sudo mv shellmodoro.sh /usr/local/bin/shellmodoro
+   ```
+
+   This step allows you to use `shellmodoro` from any directory. Otherwise, you’ll need to specify the full path to the script each time.
+
+4. **Verify Installation**:
+
+   To ensure `Shellmodoro` was installed correctly, check the help menu:
+
+   ```bash
+   shellmodoro -h
    ```
 
 ## Usage
